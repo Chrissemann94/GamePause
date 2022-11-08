@@ -19,7 +19,7 @@
       "commandName": "Project",
       "dotnetRunMessages": "true",
       "launchBrowser": true,
-      "applicationUrl": "http://localhost:5000",
+      "applicationUrl": "http://localhost:5000",    // Projekt-URL, 5000 für HTTP, 5001 für HTTPS
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       }

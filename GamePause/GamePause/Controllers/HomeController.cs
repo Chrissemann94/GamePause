@@ -18,6 +18,8 @@ namespace GamePause.Controllers
             _logger = logger;
         }
 
+
+        // Aktionsmethoden
         public IActionResult Index()
         {
             return View();

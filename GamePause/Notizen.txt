@@ -1,0 +1,33 @@
+.NET CORE
+
+Geschichte:
+2002: Webforms
+2009: .NET MVC
+2016: .NET CORE 1.0
+	2018: .NET Core 2.0
+	2019: .NET CORE 3.0
+	2020: .NET CORE 5.0	--> Version I will use
+	2021: .NET Core 6.0
+
+Vorteile:
+	+ Schnell und open source
+	+ cross platform
+	+ eingebaute Dependency Injection
+	+ leichte Upgrades
+	+ Cloud friendly
+	+ Performance besser als in früheren Versionen
+
+
+Dependency Injection:
+	arbeitet mit einem Container, um ein Objekt in mehreren Seiten unterzubringen
+
+wwwroot:
+	hat nur statische files wie bootstrap, css und js, KEINE CSharp files
+
+
+Model: steht für die Form der Daten, Klassen werden benutzt
+View: hier befindet sich das User Interface, alles, was der Client auf der Webseite sieht
+Controller: Interface zwischen Model und View, enthält viele Action Methods
+
+Tag Helper: für server side rendering
+z.B: asp-controller, asp-action, asp-for
