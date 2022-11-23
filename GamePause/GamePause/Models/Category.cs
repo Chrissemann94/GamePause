@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations;    /* ermöglicht [Key] oder [Requi
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace GamePause.Data
+namespace GamePause.Models
 {
     public class Category
     {
