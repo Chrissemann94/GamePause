@@ -1,3 +1,4 @@
+using GamePause.Data;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -26,7 +27,7 @@ namespace GamePause
         {
             services.AddControllersWithViews();
             services.AddRazorPages().AddRazorRuntimeCompilation();  // NuGet Package konfigurieren für Echtzeitänderungen
-            services.AddDbContext<Data.ApplicationDbContext>(options => options.UseSqlServer(
+            services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")
                 ));
         }

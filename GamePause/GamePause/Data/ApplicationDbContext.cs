@@ -13,6 +13,6 @@ namespace GamePause.Data
 
         }
 
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; } // erstellt den Table "Categories"
     }
 }
