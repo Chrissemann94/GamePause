@@ -1,4 +1,6 @@
 using GamePause.DataAccess;
+using GamePause.DataAccess.Repository;
+using GamePause.DataAccess.Repository.IRepository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +32,7 @@ namespace GamePause
             services.AddDbContext<ApplicationDbContext>(options => options.UseSqlServer(
                 Configuration.GetConnectionString("DefaultConnection")
                 ));
+            services.AddScoped<ICategoryRepository, CategoryRepository>();
             services.AddRazorPages().AddRazorRuntimeCompilation();
         }
 
