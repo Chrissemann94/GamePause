@@ -16,5 +16,7 @@ namespace GamePause.DataAccess
 
         public DbSet<Category> Categories { get; set; } // erstellt den Table "Categories"
         public DbSet<CoverType> CoverTypes { get; set; } // erstellt den Table "Cover Type"
+
+        public DbSet<Product> Products { get; set; } // erstellt den Table "Product"
     }
 }
