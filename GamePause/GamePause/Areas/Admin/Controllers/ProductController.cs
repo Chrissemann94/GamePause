@@ -2,6 +2,7 @@
 using GamePause.DataAccess.Repository.IRepository;
 using GamePause.Models;
 using GamePause.Models.ViewModels;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using System;
@@ -77,11 +78,11 @@ namespace GamePause.Controllers
         // POST
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Upsert(Product obj)   // NOT included in IRepository
+        public IActionResult Upsert(ProductVM obj, IFormFile file)   // NOT included in IRepository
         {
             if (ModelState.IsValid)
             {
-                _unitOfWork.Product.Update(obj);
+                // _unitOfWork.Product.Update(obj);
                 _unitOfWork.Save();
                 TempData["success"] = "Product updated successfully";
                 return RedirectToAction("Index");
